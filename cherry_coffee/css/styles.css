@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C453C;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.login .image{
+    
+    width: 680px;
+    height: 680px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #344F48;
+}
+
+.login .image img{
+    width: 450px;
+    height: 450px;
+}
+
+.login .all-login{
+    position: absolute;
+    top: 50%; /* Posisi vertikal ke tengah */
+    left: 50%; /* Posisi horizontal ke tengah */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    
+}
+
+.login .all-login .login-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    top: -2rem;
+}
+
+.login .all-login .form .nama{
+    display: flex;
+}
+.login .all-login .form .nama input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    border-radius: 40px;
+    border: none;
+    padding: 10px 35px 10px 20px;
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .nama input::placeholder{
+    color: #344F48;
+}
+
+.login .all-login .form .username{
+    display: flex;
+}
+.login .all-login .form .username input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .username input::placeholder{
+    color: #344F48;
+}
+.login .all-login .form .username{
+    display: flex;
+}
+.login .all-login .form .email input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;  
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .email input::placeholder{
+    color: #344F48;
+}
+.login .all-login .form .alamat{
+    display: flex;
+}
+.login .all-login .form .alamat input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;  
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .alamat input::placeholder{
+    color: #344F48;
+}
+.login .all-login .form .nomor-tlp{
+    display: flex;
+}
+.login .all-login .form .nomor-tlp input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;  
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .nomor-tlp input::placeholder{
+    color: #344F48;
+}
+.login .all-login .form .password{
+    display: flex;
+}
+.login .all-login .form .password input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;  
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .password input::placeholder{
+    color: #344F48;
+}
+.login .all-login .form .conf-pass{
+    display: flex;
+}
+.login .all-login .form .conf-pass input{
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 35px 10px 20px;
+    outline: none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+}
+.login .all-login .form .conf-pass input::placeholder{
+    color: #344F48;
+}
+
+
+.login .all-login .submit input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100px;
+    padding: 10px 5px;
+    background-color: #fff;
+    border-radius: 24px;
+    border: none;
+    transition: 0.2s;
+    font-size: 12px;
+}
+.login .all-login .submit input:hover{
+    background-color: #d5d5d5;
+    transition: all 0.3s;
+    
+}
+
+.login .all-login .submit a{
+    color: #344F48;
+    text-decoration: none;
+}
+
+
+.login .all-login .new{
+    position: relative;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login .all-login .new a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.login .all-login .new a:hover{
+    color: #ff6b6b;
+    transition: 0.3s;
+}

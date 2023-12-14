@@ -1,0 +1,862 @@
+:root {
+  --primary: #8b0000;
+  --bg: #E0F4EB;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #344F48;
+  /* min-height: 2000px; */
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #344F48;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo img{
+  width: 3.5rem;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Mr Dafoe', cursive;
+  font-weight: 100;
+  display: flex;
+}
+.navbar .navbar-logo .text{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
+/* .navbar .navbar-logo span{
+    color: var(--primary);
+} */
+
+/* navigasi */
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: #fff;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #fff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+/* .navbar .navbar-extra a:hover{
+    color: #fff;
+} */
+
+#hamburger-menu {
+  display: none;
+}
+
+/* profel */
+/* position: absolute;
+top: 100%;
+right: -100%;
+background-color: #fff;
+width: 25rem;
+height: 100vh; */
+
+.profil{
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 30rem;
+  padding: 0 1.5rem;
+  background-color: #d9d9d9;
+  color: #344E41;
+  transition: 0.3s;
+  
+}
+
+.profil.active{
+  transition: 0.3s;
+  right: 0;
+}
+
+.profil .profil-nav{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-left: 15%;
+}
+.profil .profil-nav .image{
+  position: relative;
+  left: 2rem;
+}
+
+.profil .profil-nav .nama-profil{
+  margin-top: 3rem;
+  display: flex;
+}
+
+.profil .nama-profil .user-profil {
+  top : 13px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+}
+.profil .nama-kontak .user-kontak {
+  top : 6px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+}
+.profil .nama-alamat .user-alamat {
+  top : 1px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.profil .profil-nav .nama-profil img{
+  margin-right: 2rem;
+  width: auto;
+  height: auto;
+}
+.profil .profil-nav .nama-kontak{
+  margin-top: 2rem;
+  display: flex;
+}
+.profil .profil-nav .nama-kontak img{
+  margin-right: 2rem;
+  width: auto;
+  height: auto;
+}
+.profil .profil-nav .nama-alamat{
+  margin-top: 2rem;
+  display: flex;
+}
+.profil .profil-nav .nama-alamat img{
+  margin-right: 2rem;
+  width: auto;
+  height: auto;
+}
+
+.profil .profil-nav .logout{
+  position: relative;
+  top : 12rem;
+  left: 6rem;
+  width: 100px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #9A9A9A;
+}
+
+.profil .profil-nav .logout a{
+  position: relative;
+  top: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #344E41;
+}
+/* Profil end */
+
+/* shoping Start */
+.shopping{
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 30rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  color: var(--bg);
+  transition: 0.3s;
+  color: #000000;
+
+  
+}
+.shopping.active{
+  transition: 0.3s;
+  right: 0;
+}
+
+.shopping .chart-shop{
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+.shopping .chart-shop .scroll{
+  overflow: auto;
+  height: 40rem;
+}
+
+.shopping .chart-shop .shopping-add{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.shopping .chart-shop .scroll .produk{
+  display: flex;
+  margin-top: 1rem;
+
+}
+
+.shopping .chart-shop .scroll .produk .img-produk{
+  margin-right: 1.5rem;
+}
+.shopping .chart-shop .scroll .produk .img-produk img{
+  width: 100px;
+  height: 90px;
+}
+.shopping .chart-shop .scroll .produk .ket-produk{
+  font-size: 1rem;
+}
+.shopping .chart-shop .scroll .produk .ket-produk .jumlah{
+  display: flex;
+  margin-top: 2rem;
+}
+.shopping .chart-shop .scroll .produk .ket-produk .jumlah .min{
+  margin-right: 0.9rem;
+}
+.shopping .chart-shop .scroll .produk .ket-produk .jumlah .min a{
+  text-decoration: none;
+  color: #000000;
+}
+.shopping .chart-shop .scroll .produk .ket-produk .jumlah .plus{
+  margin-right: 0.9rem;
+}
+.shopping .chart-shop .scroll .produk .ket-produk .jumlah .plus a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.shopping .chart-shop .produk .ket-produk .jumlah .box{
+  border: 1px solid;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center  ;
+}
+
+/* chakout */
+
+.shopping .chart-shop .checkout{
+  position: relative;
+}
+
+.shopping .chart-shop .checkout .ch-now{
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+  top: 640px;
+}
+
+.shopping .chart-shop .checkout .ch-now .konfirmasi{
+  
+  border-radius: 5px;
+  background-color: #2400FF;
+  width: 18rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+.shopping .chart-shop .checkout .ch-now .konfirmasi p{
+  position: relative;
+  top: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.shopping .chart-shop .checkout .ch-now .cancel{
+  border-radius: 5px;
+  background-color: #FC0404;
+  width: 4rem;
+  text-align: center;
+}
+
+.shopping .chart-shop .checkout .ch-now .cancel a{
+  position: relative;
+  top: 3px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* popup chekout */
+.beli{
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  transition: 0.3s;
+  
+}
+
+.beli .beli-container{
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.beli .beli-container .beli-konten{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.beli .beli-container .konfirmasi{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.beli .beli-container .konfirmasi .setuju{
+  margin-right: 1.5rem;
+}
+
+.beli .beli-container .konfirmasi .setuju .setuju-btn{
+  padding: 0.5rem;
+  background-color: #2400FF;
+  border-radius: 5px;
+  color: #fff;
+}
+.beli .beli-container .konfirmasi .batal .batal-btn{
+  padding: 0.5rem;
+  background-color: #FC0404;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+
+
+/* and */
+
+
+
+
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../image/Gambar2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  /* background: linear-gradient(
+    0deg,
+    #333333 8%,
+    rgba(255, 255, 255, 0) 50%
+  ); */
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+  position: absolute;
+  right: 0;
+}
+
+.hero .content h1 {
+  font-size: 5rem;
+  color: #344F48;
+  /* text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); */
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgb(52, 79, 72, 0.8);
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* menu start */
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+
+.menu h2{
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 0.9rem;
+  padding: 1rem;
+  border: 1px solid rgba(51, 79, 72, 0.5);
+  color:#344F48;
+  transition: all 0.3s;
+  
+}
+
+.menu .row .menu-card:hover{
+  background-color: rgba(138, 0, 0);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+
+.menu .row .menu-card img{
+  margin-top: 5rem;
+  text-align: center;
+  border-radius: 50%;
+  width: 15rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.menu .row .menu-card .menu-card-makanan{
+  margin-top: 1rem;
+}
+.menu .row .menu-card .menu-card-harga{
+  margin-top: 0.2rem;
+}
+/* menu end */
+
+/* PopUp Menu */
+
+.pop-up-menu {
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  display: none;
+}
+
+.pop-up-menu .menu-container{
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 1.2rem;
+    border: 1px solid #666;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+.pop-up-menu .menu-container .menu-details{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.pop-up-menu .menu-container .menu-details .gambar-makanan{
+  margin-right: 2rem;
+}
+.pop-up-menu .menu-container .menu-details .gambar-makanan img{
+  width: 100px;
+  height: auto;
+}
+.pop-up-menu .menu-container .menu-details .harga{
+  font-size: 14px;
+}
+.pop-up-menu .menu-container .menu-details .status-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #04FC1D;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pop-up-menu .menu-container .menu-details .jumlah-menu{
+  display: flex;
+  position: relative;
+  top: 1.6rem; 
+}
+.pop-up-menu .menu-container .menu-details .jumlah-menu .min{
+    margin-right: 0.9rem;
+    
+}
+.pop-up-menu .menu-container .menu-details .jumlah-menu .min a{
+    color: #333;
+}
+.pop-up-menu .menu-container .menu-details .jumlah-menu .box{
+  border: 1px solid;
+
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center  ;
+}
+
+.pop-up-menu .menu-container .menu-details .jumlah-menu .plus a{
+  color: #333;
+}
+.pop-up-menu .menu-container .menu-actions{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 2rem;
+}
+
+.pop-up-menu .menu-container .menu-actions .konfirmasi button{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 4px 6px;
+  border: none;
+  background: #2400FF;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.pop-up-menu .menu-container .menu-actions .konfirmasi button:hover {
+  background-color: #1d51e1;
+}
+.pop-up-menu .menu-container .menu-actions .batal button{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 4px 6px;
+  border: none;
+  background: #FC0404;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pop-up-menu .menu-container .menu-actions .batal button:hover{
+  background-color: #ff2e2e;
+}
+
+/* and */
+
+/* about-start */
+.About, .contact {
+  padding : 8rem 7% 1.4rem;
+  
+}
+.About h2, .contact h2{
+  font-size: 2.6rem;
+  margin-bottom: 3rem; 
+}
+
+.About .row{
+  display: flex;
+}
+
+.About .row .about-img{
+  flex: 1 1 35rem;
+ 
+}
+.About .row .about-img img{
+  border-radius: 50% 30%;
+  width: 100%;
+
+}
+
+.About .row .content{
+  flex: 1 1 45rem;
+  padding: 0 1%;
+}
+
+.About .row .content h2{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.About .row .content p{
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+/* about-end */
+
+/* kontak start */
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #000000;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.contact .row form .text-kontak{
+  color: #fff;
+  display: block;
+  text-align: left;
+}
+.contact .row form .text-kontak h3{
+padding-top: 10px;
+}
+
+.contact .row form .submit{
+  display: block;
+ 
+}
+
+.contact .row form .submit .btn{
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+
+/* Media Queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+      right: 0;
+    }
+    
+    .navbar .navbar-nav a {
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    
+    .navbar .navbar-nav a:hover {
+      color: #8b0000;
+  }
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #8b0000;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+    .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  /* content */
+  .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    position: relative;
+    left: 0;
+}
+  /* tentang kami */
+  .About .row{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+   
+
+  
+
+  .About .row .about-img img{
+    object-fit: cover;
+    border-radius: 40% 30%;
+    object-position: center;
+}
+.About .row .content p{
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
