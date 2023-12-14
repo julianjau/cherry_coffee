@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../statistik/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@200&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Cherry Cofee</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- logo -->
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../gambar/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">CherryCooffe</span>
+        </div>
+
+        <div class="menu-items">
+            <!-- sidebar -->
+            <ul class="nav-links">
+                <li><a href="../dashboard.php" style="padding-top: 65px; padding-bottom:25px;">
+                        <div class="icon">
+                            <i class="uil uil-estate"></i>
+                        </div>
+                        <div class="teks">
+                            <span class="link-name" style="font-size: 20px; ">Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../statistik/Statistik.html">
+                        <div class="icon">
+                            <img src="../gambar/statistik.png" alt="">
+                        </div>
+                        <div class="teks">
+                            <span class="link-name" style="font-size: 20px; padding-left:4px;">Statistik</span>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../data-penjualan/data Penjualan.php">
+                        <div class="icon">
+                            <img src="../gambar/list.png" alt="" style="padding-top:9px;">
+                        </div>
+                        <div class="teks">
+                            <span class="link-name" style="font-size: 20px; display:flex; padding-left:4px">Data
+                                Penjualan </span>
+                        </div>
+                    </a>
+                </li>
+                
+                <div class="item">
+                    <li class="sub-btn"><a>
+                            <div class="icon1"><img src="../gambar/pemesanan.png" alt="" style="padding-top:8px;"></div>
+                            <div class="teks"> <span class="link-name"
+                                    style="font-size: 20px; padding-left:4px">Menu</span></div>
+
+                            <i class="fas fa-angle-right dropdown"></i>
+                        </a>
+                    </li>
+                    <div class="sub-menu">
+                        <a href="../menu/Menu-makanan.php" class="sub-item">
+                            <div class="cild-sub-item">
+                                <div class="circle"></div>
+                                <div class="circle2"></div>
+                                Makanan
+                            </div>
+                            
+                        </a>
+                        <a href="../menu/Menu-minuman.php" class="sub-item" style="margin-top: 10px;">
+                            <div class="cild-sub-item">
+                                <div class="circle"></div>
+                                <div class="circle2"></div>
+                                Minuman
+                            </div>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="item1">
+                    <li class="sub-btn"><a>
+                            <div class="icon1"><img src="../gambar/keranjang.png" alt="" style="padding-top:9px;"></div>
+                            <div class="teks"> <span class="link-name"
+                                    style="font-size: 20px; padding-left:4px">Transaksi</span></div>
+                            <i class="fas fa-angle-right dropdown"></i>
+                        </a>
+                    </li>
+                    <div class="sub-menu">
+                        <a href="../transaksi/Transaksi-pesanan.php" class="sub-item">
+                            <div class="cild-sub-item">
+                                <div class="circle"></div>
+                                <div class="circle2"></div>
+                                Pesanan
+                            </div>
+                            
+                        </a>
+                        <a href="../transaksi/Transaksi-dalamproses.php" class="sub-item" style="margin-top: 10px;">
+                            <div class="cild-sub-item">
+                                <div class="circle"></div>
+                                <div class="circle2"></div>
+                                Dalam Proses
+                            </div>                            
+                        </a>
+                    </div>
+                </div>
+            </ul>
+
+            <ul class="logout-mode">
+
+                <li><a href="#">
+                        <div class="icon">
+                            <i class="uil uil-signout"></i>
+                        </div>
+                        <div class="teks">
+                            <span class="link-name" style="font-size: 20px;">Logout</span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <!-- header -->
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+
+            <img src="../gambar/profil.png" alt="">
+        </div>
+
+        <div class="dash-content">
+
+            <div class="activity">
+                <div class="title1">
+                    <div class="bg-image">
+                        <img src="../gambar/statistik-putih.png" alt="">
+                    </div>
+                    <span class="text">Statistik</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="../script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //jquery for toggle sub menus
+            $('.sub-btn').click(function () {
+                $(this).next('.sub-menu').slideToggle('');
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+        });
+    </script>
+</body>
+
+</html>
